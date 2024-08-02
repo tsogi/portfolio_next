@@ -5,7 +5,7 @@ This is the About section
 import { Row, Col } from 'react-bootstrap'
 import SectionWrapper from 'root/src/components/section-wrapper'
 import Button from 'root/src/components/button'
-import aboutImg from 'root/public/partials/about/picture.png'
+import aboutImg from 'root/public/partials/about/picture.jpg'
 import Image from 'next/image'
 import { Link as ScrollLink } from 'react-scroll'
 import styled from './style'
