@@ -4,7 +4,7 @@ which is also exported to be used in other variants
 */
 
 import { ImageTemplate } from 'root/src/components/section-wrapper'
-import heroImg from 'root/public/partials/hero/background.jpg'
+import heroImg from 'root/public/partials/hero/background.png'
 
 const Image = () => (
   <ImageTemplate
