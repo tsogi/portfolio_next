@@ -2,19 +2,22 @@
 # Notice: Make sure you have MDX extension installed in Visual Studio Code to see syntax highlighting
 
 # Title
-title: Coffee flavors wheel
+title: NFT price bubbles
 # Date
-date: '2022'
+date: '2023'
 # Categories
 categories: ['data visualisation']
 # Images
 images:
   # Item thumbnail
-  thumbnail: /partials/portfolio/item-4/thumbnail.png
+  thumbnail: /partials/portfolio/item-7/thumbnail.png
   # A list of iamges to be displayed in a slider
   gallery:
     [
-      '/partials/portfolio/item-4/thumbnail.png',
+      '/partials/portfolio/item-7/item-1.png',
+      '/partials/portfolio/item-7/item-2.png',
+      '/partials/portfolio/item-7/item-3.png',
+      '/partials/portfolio/item-7/thumbnail.png',
     ]
 ---
 <PortfolioLightboxLayout
@@ -22,12 +25,12 @@ images:
     <LightboxContentInfo
       projectUrl={
         // Button URL
-        'https://wheel.tsogi.net/'
+        'https://www.youtube.com/watch?v=CPNSPGxKN5o&t=2s&ab_channel=Tsogi'
       }
       articleInfo={
         // Details part as key-value pairs
         [
-          {key: 'Client', value: 'Bellwether Coffee'},
+          {key: 'Client', value: 'Upwork'},
           {key: 'Categories', value: <CategoriesToText />},
           {key: 'Date', value: <DateToText />},
           {key: 'Technologies', value: 'D3.js'}
@@ -38,5 +41,5 @@ images:
   carousel={
     <LightboxCarousel />
 }>
-User can find best fit of coffee based on flavor prefferences 
+Floating bubbles displaying NFT price changes
 </PortfolioLightboxLayout>

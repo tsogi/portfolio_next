@@ -281,9 +281,14 @@ const LightboxContentInfo = (props) => {
         ))}
       </ul>
       {/* Button part */}
-      <Button target='_blank' href={projectUrl}>
-        Visit Project
-      </Button>
+      {
+        projectUrl ? 
+        <Button target='_blank' href={projectUrl}>
+          Visit Project
+        </Button>
+        :
+        null
+      }
     </>
   )
 }

@@ -33,7 +33,7 @@ const About = (props) => (
       {/* Text part - Displays name, description, contact details */}
       <Col xs='12' lg='7'>
         {/* Information part */}
-        <h2 className='_subtitle'>Who am i?</h2>
+        <h2 className='_subtitle'>Who am I?</h2>
 
         <h2 className='_title'>
           I&apos;m Nika Tsogiaidze, a full-stack web developer

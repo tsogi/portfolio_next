@@ -325,6 +325,7 @@ const Blog = (props) => {
     dispatch,
   }
 
+  return null;
   return (
     <SectionWrapper
       headerData={{

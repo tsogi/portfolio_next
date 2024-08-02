@@ -2,24 +2,20 @@
 # Notice: Make sure you have MDX extension installed in Visual Studio Code to see syntax highlighting
 
 # Title
-title: T-Shirt Design
+title: Coronavirus live map
 # Date
-date: '2023-04-08'
+date: '2020'
 # Categories
-categories: ['brand']
+categories: ['data visualisation']
 # Images
 images:
   # Item thumbnail
-  thumbnail: /partials/portfolio/item-5/thumbnail.jpg
+  thumbnail: /partials/portfolio/item-5/thumbnail.png
   # A list of iamges to be displayed in a slider
   gallery:
     [
-      '/partials/portfolio/item-5/item-5.jpg',
-      '/partials/portfolio/item-5/item-1.jpg',
-      '/partials/portfolio/item-5/item-2.jpg',
-      '/partials/portfolio/item-5/item-3.jpg',
-      '/partials/portfolio/item-5/item-4.jpg',
-      '/partials/portfolio/item-5/item-6.jpg',
+      '/partials/portfolio/item-5/item-1.png',
+      '/partials/portfolio/item-5/thumbnail.png',
     ]
 ---
 <PortfolioLightboxLayout
@@ -27,15 +23,15 @@ images:
     <LightboxContentInfo
       projectUrl={
         // Button URL
-        'https://www.envato.com'
+        'https://covid.tsogi.net/'
       }
       articleInfo={
         // Details part as key-value pairs
         [
-          {key: 'Client', value: 'Envato'},
+          {key: 'Client', value: 'Personal'},
           {key: 'Categories', value: <CategoriesToText />},
           {key: 'Date', value: <DateToText />},
-          {key: 'Technologies', value: 'HTML5, SCSS, JS'}
+          {key: 'Technologies', value: 'D3.js'}
         ]
       }
     />
@@ -43,8 +39,5 @@ images:
   carousel={
     <LightboxCarousel />
 }>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
-
+Coronavirus live map showing number of cases, recoveries and deaths cause by covid 19
 </PortfolioLightboxLayout>

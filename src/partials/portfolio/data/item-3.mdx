@@ -2,24 +2,21 @@
 # Notice: Make sure you have MDX extension installed in Visual Studio Code to see syntax highlighting
 
 # Title
-title: Modern Bag Design
+title: The trend guessing game
 # Date
-date: '2023-08-12'
+date: '2021'
 # Categories
-categories: ['design']
+categories: ['games']
 # Images
 images:
   # Item thumbnail
-  thumbnail: /partials/portfolio/item-3/thumbnail.jpg
+  thumbnail: /partials/portfolio/item-3/thumbnail.png
   # A list of iamges to be displayed in a slider
   gallery:
     [
-      '/partials/portfolio/item-3/item-3.jpg',
-      '/partials/portfolio/item-3/item-1.jpg',
-      '/partials/portfolio/item-3/item-2.jpg',
-      '/partials/portfolio/item-3/item-4.jpg',
-      '/partials/portfolio/item-3/item-5.jpg',
-      '/partials/portfolio/item-3/item-6.jpg',
+      '/partials/portfolio/item-3/item-1.png',
+      '/partials/portfolio/item-3/item-2.png',
+      '/partials/portfolio/item-3/thumbnail.png',
     ]
 ---
 <PortfolioLightboxLayout
@@ -27,15 +24,15 @@ images:
     <LightboxContentInfo
       projectUrl={
         // Button URL
-        'https://www.envato.com'
+        'https://storylinegame.com/'
       }
       articleInfo={
         // Details part as key-value pairs
         [
-          {key: 'Client', value: 'Envato'},
+          {key: 'Client', value: 'Upwork'},
           {key: 'Categories', value: <CategoriesToText />},
           {key: 'Date', value: <DateToText />},
-          {key: 'Technologies', value: 'HTML5, SCSS, JS'}
+          {key: 'Technologies', value: 'Javascript, PHP, MySql'}
         ]
       }
     />
@@ -43,8 +40,5 @@ images:
   carousel={
     <LightboxCarousel />
 }>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
-
+Check how well you know the trends that shape our lives
 </PortfolioLightboxLayout>

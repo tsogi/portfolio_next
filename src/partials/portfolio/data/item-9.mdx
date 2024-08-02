@@ -2,7 +2,7 @@
 # Notice: Make sure you have MDX extension installed in Visual Studio Code to see syntax highlighting
 
 # Title
-title: Coffee flavors wheel
+title: Equipment details explorer
 # Date
 date: '2022'
 # Categories
@@ -10,11 +10,14 @@ categories: ['data visualisation']
 # Images
 images:
   # Item thumbnail
-  thumbnail: /partials/portfolio/item-4/thumbnail.png
+  thumbnail: /partials/portfolio/item-9/thumbnail.png
   # A list of iamges to be displayed in a slider
   gallery:
     [
-      '/partials/portfolio/item-4/thumbnail.png',
+      '/partials/portfolio/item-9/item-1.png',
+      '/partials/portfolio/item-9/item-2.png',
+      '/partials/portfolio/item-9/item-3.png',
+      '/partials/portfolio/item-9/thumbnail.png',
     ]
 ---
 <PortfolioLightboxLayout
@@ -22,12 +25,12 @@ images:
     <LightboxContentInfo
       projectUrl={
         // Button URL
-        'https://wheel.tsogi.net/'
+        'https://www.youtube.com/watch?v=sG-vJUfbz30&t=23s&ab_channel=Tsogi'
       }
       articleInfo={
         // Details part as key-value pairs
         [
-          {key: 'Client', value: 'Bellwether Coffee'},
+          {key: 'Client', value: 'Upwork'},
           {key: 'Categories', value: <CategoriesToText />},
           {key: 'Date', value: <DateToText />},
           {key: 'Technologies', value: 'D3.js'}
@@ -38,5 +41,5 @@ images:
   carousel={
     <LightboxCarousel />
 }>
-User can find best fit of coffee based on flavor prefferences 
+User can explore parts of equipments
 </PortfolioLightboxLayout>
