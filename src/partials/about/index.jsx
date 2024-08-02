@@ -36,7 +36,7 @@ const About = (props) => (
         <h2 className='_subtitle'>Who am i?</h2>
 
         <h2 className='_title'>
-          I&apos;m Alex Smith, a visual UX/UI Designer and Web Developer
+          I&apos;m Nika Tsogiaidze, a full-stack web developer
         </h2>
 
         <div className='_description'>
@@ -54,23 +54,23 @@ const About = (props) => (
           <Row>
             <Col className='_info' xs='12' md='6'>
               <span>Name:</span>
-              <p>Alex Smith</p>
+              <p>Nika Tsogiaidze</p>
             </Col>
             <Col className='_info' xs='12' md='6'>
               <span>Email:</span>
               <p>
-                <a href='alex@example.com'>alex@example.com</a>
+                <a href='tsogiaidze@yahoo.com'>tsogiaidze@yahoo.com</a>
               </p>
             </Col>
           </Row>
           <Row>
             <Col className='_info' xs='12' md='6'>
               <span>Age:</span>
-              <p>21</p>
+              <p>31</p>
             </Col>
             <Col className='_info' xs='12' md='6'>
               <span>From:</span>
-              <p>Liverpool, UK</p>
+              <p>Tbilisi, Georgia</p>
             </Col>
           </Row>
         </address>

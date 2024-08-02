@@ -92,7 +92,7 @@ const Sidebar = ({ children }) => {
   const data = {
     toggler: 'Menu',
     status: 'Available for work',
-    author: 'Alex Smith',
+    author: 'Nika Tsogiaidze',
   }
 
   return (

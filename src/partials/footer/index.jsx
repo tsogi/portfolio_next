@@ -53,37 +53,35 @@ const Footer = (props) => (
       <SingleBlock
         Icon={icons.MapSharp}
         content={
-          <a href='https://goo.gl/maps/2YAGiugG47VAS17g7' target='_blank'>
-            4155, Liverpool, United Kingdom.
+          <a href='https://maps.app.goo.gl/tnUxqL1MoaghUVZa8' target='_blank'>
+            Tbilisi, Georgia.
           </a>
         }
         cols={{ xs: '12', sm: '4' }}
       />
       <SingleBlock
         Icon={icons.CallSharp}
-        content={<a href='tel:+441632967704'>+44 1632 967704</a>}
+        content={<a href='tel:+995598111417'>+995 598 111417</a>}
         cols={{ xs: '12', sm: '4' }}
       />
       <SingleBlock
         Icon={icons.SendSharp}
-        content={<a href='mailto:alex@example.com'>alex@example.com</a>}
+        content={<a href='mailto:tsogiaidze@yahoo.com'>tsogiaidze@yahoo.com</a>}
         cols={{ xs: '12', sm: '4' }}
       />
     </Row>
     {/* List social media icons and copyright notice */}
     <Row className='_row _mini'>
       <Col xs='12' lg='5' className='_socials'>
-        <SocialIcon url='#0' Icon={icons.LogoTwitter} color='#1DA1F2' />
-        <SocialIcon url='#0' Icon={icons.LogoInstagram} color='#C32361' />
-        <SocialIcon url='#0' Icon={icons.LogoLinkedin} color='#0077B5' />
-        <SocialIcon url='#0' Icon={icons.LogoYoutube} color='#c33a38' />
-        <SocialIcon url='#0' Icon={icons.LogoGithub} color='#6e5494' />
-        <SocialIcon url='#0' Icon={icons.LogoFacebook} color='#3B5998' />
+        <SocialIcon url='https://www.youtube.com/@nika_tsogiaidze' Icon={icons.LogoYoutube} color='#c33a38' />
+        <SocialIcon url='https://github.com/tsogi' Icon={icons.LogoGithub} color='#6e5494' />
+        <SocialIcon url='https://www.facebook.com/tsogiaidze' Icon={icons.LogoFacebook} color='#3B5998' />
+        <SocialIcon url='https://www.linkedin.com/in/tsogiaidze/' Icon={icons.LogoLinkedin} color='#0077B5' />
       </Col>
       <Col as='p' xs='12' lg='7' className='_copyright-notice'>
-        Copyright © 2023 CodeX, all rights reserved. Developed by{' '}
-        <a href='https://themeforest.net/user/exill' target='_blank'>
-          Exill
+        Copyright © 2024 all rights reserved. Developed by{' '}
+        <a href='/'>
+          Nika
         </a>
         .
       </Col>
