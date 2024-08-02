@@ -40,14 +40,7 @@ const About = (props) => (
         </h2>
 
         <div className='_description'>
-          <p>
-            I am a freelancer based in the United Kingdom and i have been
-            building noteworthy UX/UI designs and websites for years, which
-            comply with the latest design trends. I help convert a vision and an
-            idea into meaningful and useful products. Having a sharp eye for
-            product evolution helps me prioritize tasks, iterate fast and
-            deliver faster.
-          </p>
+          <p>I am a freelance developer with extensive experience in creating engaging websites, interactive data visualizations, and cross-platform mobile apps. I excel at transforming ideas into fully functional digital products, from design to production, ensuring they meet the latest industry standards</p>
         </div>
 
         <address className='_address'>

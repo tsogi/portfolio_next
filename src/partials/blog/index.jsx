@@ -325,7 +325,6 @@ const Blog = (props) => {
     dispatch,
   }
 
-  return null;
   return (
     <SectionWrapper
       headerData={{
@@ -339,8 +338,9 @@ const Blog = (props) => {
         <Col xs='12'>
           {/* Provide context */}
           <Context.Provider value={contextData}>
-            <PostsList />
-            <PostLightbox />
+            <b>Coming soon...</b>
+            {/* <PostsList />
+            <PostLightbox /> */}
           </Context.Provider>
         </Col>
       </Row>

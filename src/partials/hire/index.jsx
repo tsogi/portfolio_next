@@ -25,7 +25,7 @@ const Hire = (props) => (
         <h1 className='_title'>Let&apos;s work together!</h1>
 
         <p className='_description'>
-          I am available for freelance projects. Hire me and get your project
+          I am available for freelance or contract projects. Hire me and get your project
           done.
         </p>
       </Col>
