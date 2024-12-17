@@ -1,0 +1,42 @@
+---
+# Notice: Make sure you have MDX extension installed in Visual Studio Code to see syntax highlighting
+
+# Title
+title: Javascript Lessons
+# Date
+date: '2024'
+# Categories
+categories: ['youtube lectures']
+# Images
+images:
+  # Item thumbnail
+  thumbnail: /partials/portfolio/item-11/thumbnail.png
+  # A list of iamges to be displayed in a slider
+  gallery:
+    [
+      '/partials/portfolio/item-11/item-1.png',
+      '/partials/portfolio/item-11/item-2.png',
+      '/partials/portfolio/item-11/thumbnail.png',
+    ]
+---
+<PortfolioLightboxLayout
+  contentInfo={
+    <LightboxContentInfo
+      projectUrl={
+        // Button URL
+        'https://www.youtube.com/watch?v=y1hX-1GAYDU&list=PL0CYgN0nCmcmemi9OAd1llwUpsGQYIpqW&ab_channel=NikaTsogiaidze'
+      }
+      articleInfo={
+        // Details part as key-value pairs
+        [
+          {key: 'Categories', value: <CategoriesToText />},
+          {key: 'Technologies', value: 'Javascript'}
+        ]
+      }
+    />
+  }
+  carousel={
+    <LightboxCarousel />
+}>
+Javascript course for absolute beginners
+</PortfolioLightboxLayout>

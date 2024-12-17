@@ -35,7 +35,7 @@ const Hero = (props) => {
 
   // Data for typed effect
   const data = {
-    roles: ['Next.js developer', 'D3.js developer', "Laravel developer"],
+    roles: ['Javascript developer', 'Typescript developer', "PHP developer", "Python developer"],
   }
 
   // UseEffect to initialize typed plugin

@@ -1,0 +1,42 @@
+---
+# Notice: Make sure you have MDX extension installed in Visual Studio Code to see syntax highlighting
+
+# Title
+title: React & Next.js Lessons
+# Date
+date: '2024'
+# Categories
+categories: ['youtube lectures']
+# Images
+images:
+  # Item thumbnail
+  thumbnail: /partials/portfolio/item-12/thumbnail.png
+  # A list of iamges to be displayed in a slider
+  gallery:
+    [
+      '/partials/portfolio/item-12/item-1.png',
+      '/partials/portfolio/item-12/item-2.png',
+      '/partials/portfolio/item-12/thumbnail.png',
+    ]
+---
+<PortfolioLightboxLayout
+  contentInfo={
+    <LightboxContentInfo
+      projectUrl={
+        // Button URL
+        'https://www.youtube.com/watch?v=NEZxgGp2AE0&list=PL0CYgN0nCmclgO4YcmHP-s3_eUL0QzVHJ&ab_channel=NikaTsogiaidze'
+      }
+      articleInfo={
+        // Details part as key-value pairs
+        [
+          {key: 'Categories', value: <CategoriesToText />},
+          {key: 'Technologies', value: 'React'}
+        ]
+      }
+    />
+  }
+  carousel={
+    <LightboxCarousel />
+}>
+React & Next.js course for absolute beginners
+</PortfolioLightboxLayout>

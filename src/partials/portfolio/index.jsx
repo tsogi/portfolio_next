@@ -436,7 +436,7 @@ const Portfolio = (props) => {
       css={styled.Portfolio}
       headerData={{
         title: 'Portfolio',
-        description: 'Showcasing some of my best work',
+        description: 'Showcasing some of my projects',
       }}
       {...otherProps}
     >
