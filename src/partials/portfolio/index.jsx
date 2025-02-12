@@ -435,7 +435,7 @@ const Portfolio = (props) => {
     <SectionWrapper
       css={styled.Portfolio}
       headerData={{
-        title: 'Portfolio',
+        title: 'Projects',
         description: 'Showcasing some of my projects',
       }}
       {...otherProps}

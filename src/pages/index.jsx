@@ -26,7 +26,7 @@ const HomeImage = ({ portfolioData, testimonialsData, blogData }) => (
 
     {/* Include the rest of sections, some with passed MDX data */}
     <About nav='About' id='about' />
-    <Portfolio nav='Portfolio' id='portfolio' data={portfolioData} />
+    <Portfolio nav='Projects' id='portfolio' data={portfolioData} />
     <Services nav='Services' id='services' />
     <Hire id='hire' />
     <Testimonials nav='Clients' id='testimonials' data={testimonialsData} />
