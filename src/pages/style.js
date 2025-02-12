@@ -17,6 +17,10 @@ export default {
       -webkit-text-fill-color: transparent;
       text-align: center;
       margin-bottom: 0.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media (max-width: ${bs['breakpoint-max-sm']}) {
         font-size: 2.5rem;
@@ -28,6 +32,10 @@ export default {
       color: #94a3b8;
       text-align: center;
       margin-bottom: 4rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       
       @media (max-width: ${bs['breakpoint-max-sm']}) {
         font-size: 1rem;
