@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap'
 import SectionWrapper from 'root/src/components/section-wrapper'
-import styled from './style'
+import styled from 'root/src/styles/pages/jptf03'
 
 const Jptf03 = () => {
   return (
