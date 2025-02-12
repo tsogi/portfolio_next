@@ -7,52 +7,76 @@ export default {
     background-color: #060606;
     color: #fff;
     min-height: 100vh;
+    padding: 4rem 0;
+
+    ._section-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #5587ff, #3772ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 0.5rem;
+
+      @media (max-width: ${bs['breakpoint-max-sm']}) {
+        font-size: 2.5rem;
+      }
+    }
+
+    ._section-description {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      text-align: center;
+      margin-bottom: 4rem;
+      
+      @media (max-width: ${bs['breakpoint-max-sm']}) {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+      }
+    }
 
     .articles {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 80%;
+      width: 90%;
+      max-width: 1400px;
       margin: 0 auto;
+      gap: 2rem;
     }
 
     .profile {
-      margin: 30px;
+      margin: 0;
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 3rem;
-      width: 90%;
-      max-width: 300px;
-      background-color: #1b2028;
-      border-radius: 16px;
+      padding: 2.5rem;
+      width: 320px;
+      background-color: rgba(27, 32, 40, 0.8);
+      border-radius: 24px;
       position: relative;
-      border: 3px solid transparent;
-      background-clip: padding-box;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
       text-align: center;
       color: #f1f3f3;
-      background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
+      transition: all 0.3s ease;
 
-      &:after {
-        content: "";
-        display: block;
-        top: -3px;
-        left: -3px;
-        bottom: -3px;
-        right: -3px;
-        z-index: -1;
-        position: absolute;
-        border-radius: 16px;
-        background-image: linear-gradient(135deg, #752e7c, #734a58 20%, #1b2028 30%, #2c333e 100%);
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px -10px rgba(55, 114, 255, 0.2);
+        border-color: rgba(55, 114, 255, 0.3);
       }
     }
 
     .profile-image {
-      border-radius: 50%;
+      border-radius: 20px;
       overflow: hidden;
-      width: 175px;
-      height: 175px;
+      width: 200px;
+      height: 200px;
       position: relative;
+      margin-bottom: 1.5rem;
+      border: 3px solid rgba(55, 114, 255, 0.3);
+      box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
 
       img {
         position: absolute;
@@ -60,49 +84,89 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover img {
+        transform: translate(-50%, -50%) scale(1.1);
       }
     }
 
     .profile-username {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 600;
-      margin-top: 1.5rem;
+      margin: 0 0 1.5rem;
+      color: #fff;
+      letter-spacing: 0.5px;
     }
 
     .profile-actions {
-      margin-top: 1.5rem;
+      margin-top: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
+      gap: 1rem;
     }
 
     .btn--primary {
-      border-radius: 99em;
-      background-color: ${theme().primary};
-      background-image: linear-gradient(135deg, #5587ff, #3772ff);
+      padding: 0.8em 1.8em;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #5587ff, #3772ff);
       color: #fff;
-      padding: 0.8em 1.375em;
       text-decoration: none;
-      transition: 0.15s ease;
+      transition: all 0.3s ease;
+      border: none;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 15px -3px rgba(55, 114, 255, 0.2);
 
       &:hover {
-        background-size: 150%;
+        background: linear-gradient(135deg, #3772ff, #2961ff);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px -3px rgba(55, 114, 255, 0.3);
+      }
+
+      &:active {
+        transform: translateY(0);
       }
     }
 
     .facebookGroup {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       text-align: center;
-      margin: 99px 0 150px;
+      margin: 5rem 0 2rem;
+      padding: 2rem;
+      background: rgba(27, 32, 40, 0.5);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
+      span {
+        color: #94a3b8;
+        margin-right: 0.5rem;
+      }
 
       a {
         color: ${theme().primary};
         text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
 
         &:hover {
+          color: #5587ff;
           text-decoration: underline;
         }
+      }
+
+      @media (max-width: ${bs['breakpoint-max-sm']}) {
+        font-size: 0.9rem;
+        margin: 3rem 1rem 2rem;
+        padding: 1.5rem;
       }
     }
   `,
