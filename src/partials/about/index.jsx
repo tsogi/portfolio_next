@@ -69,7 +69,7 @@ const About = (props) => (
         </address>
 
         {/* Buttons part */}
-        <Button className='_button' href='/partials/about/cv.pdf' download>
+        <Button className='_button' href='/partials/about/Cv_Nika_Tsogiaidze.pdf' download>
           Download CV
         </Button>
 
