@@ -161,6 +161,13 @@ const parseAllMdx = async (dir) => {
               scope: {
                 frontmatter,
               },
+              // next-mdx-remote v6+ strips {expression} syntax from MDX by default
+              // (a security default meant for untrusted/user-submitted content).
+              // Our MDX files are trusted, locally-authored source files that rely on
+              // JS expressions (e.g. contentInfo={<LightboxContentInfo ... />}), so we
+              // opt back in here. blockDangerousJS stays enabled (default) as an extra
+              // safety net against eval/Function/require/etc.
+              blockJS: false,
             }),
           ),
       ),
